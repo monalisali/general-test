@@ -35,6 +35,9 @@ public class Main {
 
         aa.forEach(System.out::print);
 
+        //16进制数字输出A
+        System.out.println('\u0041');
+
     }
 
     static class Thread1 extends Thread
