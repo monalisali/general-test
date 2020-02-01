@@ -37,7 +37,7 @@ public class Main {
                 .subclass(MyService.class) //动态生成MyService的子类
                 .method(new FilterMethodAnnotateWithLogMatcher()) //要拦截哪些方法，method()接收一个ElementMatcher接口参数，所以我们要实现这个接口
                 //.method(m->methodsWithLog.contains(m.getName())) //不实现FilterMethodAnnotateWithLogMatcher，使用lambda
-                .intercept(MethodDelegation.to(LoggerInterceptor.class))//获取都需要拦截的方法后，把它们委托给LoggerInterceptor
+                .intercept(MethodDelegation.to(LoggerInterceptor.class))//获取到需要拦截的方法后，把它们委托给LoggerInterceptor
                 .make()
                 .load(Main.class.getClassLoader())
                 .getLoaded()
