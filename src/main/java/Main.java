@@ -38,7 +38,16 @@ public class Main {
         //16进制数字输出A
         System.out.println('\u0041');
 
+        User user = new User();
+        user.setID(1);
+        user.setUserName("AA");
+        a(user);
 
+
+    }
+
+    private static void a(User u) {
+        u.setID(2);
     }
 
     static class Thread1 extends Thread
