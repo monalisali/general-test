@@ -42,7 +42,7 @@ public class Main {
         user.setID(1);
         user.setUserName("AA");
         a(user);
-
+        Thread
 
     }
 
