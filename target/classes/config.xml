@@ -7,7 +7,10 @@
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd ">
 
+    <!--有了这个配置，Spring才能识别注解，如:@Autowired-->
     <context:annotation-config/>
+
+    <!--bean在Spring中就是Java对象，这里的bean配置就是告诉Spring，有哪些Java对象需要处理-->
     <bean id="orderDao" class="Spring.OrderDao"/>
     <bean id="orderService" class="Spring.OrderService"/>
 </beans>

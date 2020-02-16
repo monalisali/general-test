@@ -42,8 +42,6 @@ public class Main {
         user.setID(1);
         user.setUserName("AA");
         a(user);
-        Thread
-
     }
 
     private static void a(User u) {
