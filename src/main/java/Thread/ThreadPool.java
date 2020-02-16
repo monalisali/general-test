@@ -12,6 +12,7 @@ public class ThreadPool {
                 e.printStackTrace();
             }
             System.out.println("我结束工作啦！");
+            throw new RuntimeException();
         });
         System.out.println("我把工作提交啦！");
         System.out.println(future.get());
